@@ -3,7 +3,7 @@ package com.shahid.data
 import kotlinx.coroutines.flow.Flow
 
 class TodoRepositoryImplementation (
-    toDo: ToDo
+    toDo: ToDoDao
         ) : TodoRepository {
     override suspend fun insertTodo(toDo: ToDo) {
         insertTodo(toDo)
